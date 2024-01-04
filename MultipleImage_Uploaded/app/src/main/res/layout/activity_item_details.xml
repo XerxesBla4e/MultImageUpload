@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ItemDetails">
+
+    <!-- ViewPager to display multiple images -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/detailViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+    <!-- Item Name TextView -->
+    <TextView
+        android:id="@+id/detailItemNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailViewPager"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Item Name" />
+
+    <!-- Description TextView -->
+    <TextView
+        android:id="@+id/detailDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailItemNameTextView"
+        android:padding="16dp"
+        android:text="Item Description" />
+
+</RelativeLayout>
